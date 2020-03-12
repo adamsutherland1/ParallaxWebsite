@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Welcome</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <!--draws the burger in scalable vector format-->
+          <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <!--taken out the # for the x button as it was causing issues with page going back to the top.-->
+    <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#Home">Home</a>
+    <a href="#Introduction">Introduction</a>
+    <a href="#Education">Education</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Projects">Projects</a>
+  </div>
+
+  <!--scripts to run on the opening and closing of the side menu-->
+  <script>
+    function openSlideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+  <div class="pimg1" id="Home">
+    <div class="ptext">
+      <span class="border">
+        Welcome
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark" id="Introduction">
+    <h2>Quick Intro</h2>
+    <p>
+      This is practicing a parallax style webpage.
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+      </span>
+    </div>
+  </div>
+
+
+  <section class="section section-light" id="Education">
+    <h2>Education</h2>
+    <h3><i class="material-icons">&#xe52d;</i>distinctio facilis quis dignissimos <i class="material-icons">&#xe567;</i>
+      aliquid et accusantium! Id?</h3>
+    <p>perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto,
+      esse soluta exercitationem
+      aliquid et accusantium! Id?perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto,
+      esse soluta exercitationem
+      aliquid et accusantium! Id?
+    </p>
+    </p>
+
+    <h3><i class="material-icons">&#xe52d;</i> perspiciatis praesentium <i class="material-icons">&#xe567;</i>
+      perspiciatis praesentium </h3>
+    <p>perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto,
+      esse soluta exercitationem
+      aliquid et accusantium! Id?perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto,
+      esse soluta exercitationem
+      aliquid et accusantium! Id?
+    </p>
+
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light" id="Experience">
+    <h2>Experience</h2>
+    <h3>Lorem ips<i class="material-icons">&#xe567;</i> Lorem ipsum
+      aliquid et accusantium! Id </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?
+    </p>
+    <h3>Lorem ips<i class="material-icons">&#xe567;</i> Lorem ipsum
+      aliquid et accusantium! Id </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?
+    </p>
+  </section>
+
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border trans">
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark" id="Projects">
+    <h2>Projects</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur at error
+      necessitatibus corporis a
+      perspiciatis praesentium distinctio facilis quis dignissimos libero repudiandae iusto, esse soluta exercitationem
+      aliquid et accusantium! Id?
+    </p>
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border trans">
+      </span>
+    </div>
+  </div>
+
+</body>
+
+</html>
